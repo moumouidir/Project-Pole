@@ -3,6 +3,7 @@
       <h1 class="logo-text"><span>Pole</span>IT</h1>
     </a>
     <i class="fa fa-bars menu-toggle"></i>
+  
     <ul class="nav">
                       <li><a href="#home">Accueil</a></li>
                       <li><a href="#activite">Activite</a></li>

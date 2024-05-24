@@ -1,20 +1,20 @@
+ 
 <?php
+  $servername = getenv('DB_HOST');
+  $username = getenv('DB_USER');
+  $password = getenv('DB_PASSWORD');
+  $dbname = getenv('DB_NAME');
 
-// $host = 'localhost';
-// $user = 'root';
-// $pass = '';
-// $db_name = 'blog';
+  $conn = new mysqli($servername, $username, $password, $dbname);
 
-$host = getenv('DB_HOST');
-$user = getenv('DB_USER');
-$pass = getenv('DB_PASSWORD');
-$db_name = getenv('DB_NAME');
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+ }
 
-$conn = new mysqli($host, $user, $pass, $db_name);
+?>  
 
 
-if ($conn->connect_error) {
-    die('Database connection error: ' . $conn->connect_error);
-}
+
+
 
 
